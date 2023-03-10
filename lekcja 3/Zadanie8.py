@@ -1,3 +1,5 @@
+import random
+
 def multipli_game():
     wrong = 0
     good = 0
