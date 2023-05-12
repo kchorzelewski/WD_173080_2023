@@ -8,7 +8,5 @@ dfK = df[df["Plec"] == "K"]
 results = df.groupby(["Imie", "Plec"])["Liczba"].sum().reset_index()
 k = results[results['Plec'] == "K"].reset_index()
 k = k["Liczba"].idxmax()
+k = k.iloc[k]["Imie"] # nie działa :/
 print(k)
-
-
-
